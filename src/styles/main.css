@@ -1,0 +1,92 @@
+
+.page{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  
+}
+.page_header {
+  height: 50px;
+  justify-content: center;
+  background-color: #ee974b;
+  text-align: center;
+  color: #fff;
+  font-size: xx-large;
+
+}
+.P2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: x-large;
+  width: 90%;
+  align-self: center;
+  
+}
+.rules{
+  font-size: large;
+
+}
+ .bold {
+  font-size: xx-large;
+  font-weight: bold;
+ }
+ .left{
+  text-align: left;
+  margin-bottom: 1em;
+ }
+ .tab{
+  margin-left: 5em;
+ }
+.flex {
+  display: flex;
+  columns: column;
+  justify-content: left;
+}
+
+.subtitle{
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.pagetext {
+  width:90%;
+  text-align: left;
+  padding-left: 4%;
+
+}
+
+p {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+ }
+
+ .footer-bottom {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}
+.images{
+  display:flex;
+  max-width: 75%;
+}
+.images img{
+  height: 25%;
+  width: 25%;
+}
+.images:nth-of-type(even) {
+  flex-direction: row-reverse;
+  
+
+}
+
+.app-container {
+  min-height: 350px;
+}
+
+.btn-delete-user {
+  width: 40px;
+  text-align: center;
+  box-sizing: content-box;
+}

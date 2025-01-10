@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // or "es2020"
+    "module": "esnext",
+    "baseUrl": "./src",
+    "outDir": "./slr-dist", 
+    "moduleResolution": "node",
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@/*": ["./*"], 
+      "@/types/*": ["./types/*"], // Map "@/types/*" to "src/types/*"
+      "@/components/*": ["./components/*"],
+      "@/utils/*": ["./utils/*"],
+      "@/services/*": ["./services/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/views/*": ["./views/*"],
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "strict": true, // Recommended for better type checking
+    "esModuleInterop": true, // Important for module compatibility
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/**/*.d.ts", 
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
